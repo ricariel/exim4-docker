@@ -28,6 +28,6 @@ EXPOSE 25
 EXPOSE 465
 EXPOSE 587
 
-ENTRYPOINT ["/usr/sbin/exim"]
-CMD ["-c","/etc/exim"]
+#ENTRYPOINT [""]
+CMD ["/usr/sbin/exim4", "-bd", "-q30m"]
 
